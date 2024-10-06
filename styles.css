@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu-bar {
+    background-color: #1988f7;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  
+  .item {
+    color: white;
+    background-color: transparent;
+    font-size: 18px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 14px 20px;
+  }
+  
+  .item.title {
+    font-weight: 600;
+  }
+  
+  .item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  @use "@material";
+body {
+  font-family: roboto;
+  margin: 0;
+  padding: 0;
+  color: #3d3d3d;
+  --mdc-theme-primary: #007f8b;
+  --mdc-theme-on-primary: #f1f3f4;
+}
+
+h1 {
+  color: #007f8b;
+  text-align: center;
+}
+
+h2 {
+  clear: both;
+}
+
+em {
+  font-weight: bold;
+}
+
+video {
+  clear: both;
+  display: block;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+section {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.mdc-button.mdc-button--raised.removed {
+  display: none;
+}
+
+.invisible {
+  opacity: 0.2;
+}
+
+.videoView,
+.detectOnClick {
+  position: relative;
+  float: left;
+  width: 48%;
+  margin: 2% 1%;
+  cursor: pointer;
+}
+
+.detectOnClick p {
+  position: absolute;
+  padding: 5px;
+  background-color: #007f8b;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 12px;
+  margin: 0;
+}
+
+.videoView p {
+  position: absolute;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #007f8b;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 12px;
+  margin: 0;
+}
+
+.highlighter {
+  background: rgba(0, 255, 0, 0.25);
+  border: 1px dashed #fff;
+  z-index: 2;
+  position: absolute;
+}
+
+.detectOnClick {
+  z-index: 0;
+}
+
+.detectOnClick img {
+  width: 100%;
+}
+
+.videoView {
+  display: relative;
+  flex-direction: column;
+  align-items: center; /* จัดกลางแนวตั้ง */
+  justify-content: center; /* จัดกลางแนวนอน */
+  margin: 20px; /* เพิ่มระยะห่างจากขอบ */
+}
+
+#webcam {
+  transform: scaleX(-1);
+  width: 640px; /* กำหนดความกว้างของวิดีโอ */
+  height: 480px; /* กำหนดความสูงของวิดีโอ */
+}
+
+.videoView button {
+  margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างปุ่มกับวิดีโอ */
+}
+
+.center {
+  margin: auto;
+  padding: 20px 25%;
+}
+
+.center_button {
+  margin-left: 85%;
+}
+
+nav{
+  margin-bottom: 20px;
+}
+
+.output_canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(-1); /* พลิก canvas ตามวิดีโอ */
+  width: 100%;
+}
+
+.memberbox {
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
+
+.memberlist {
+  margin-bottom: 20px;
+}
