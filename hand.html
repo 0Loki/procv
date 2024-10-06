@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>MiniProject</title>
+  <link href="\Css\hand.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="\Css\styles.css">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="\JavaScript\hand.js" type="module"></script>
+</head>
+<body>
+  <nav class="menu-bar">
+    <div class="group">
+      <a class="item title" href="index.html">Home</a>
+    </div>
+    <div class="group">
+      <a class="item" href="Object.html">ObjectDetection</a>
+      <a class="item" href="Image.html">ImageSegment</a>
+      <a class="item" href="hand.html">HandLandmarker</a>
+      <a class="item" href="face_landmark.html">FaceLandmarker</a>
+      <a class="item" href="face_detec.html">FaceDetection</a>
+    </div>
+  </nav>
+  <h1>Hand Landmark Detection Using the MediaPipe HandLandmarker</h1> <!-- Changed heading -->
+
+  <section id="demos" class="invisible">
+    <h2>Demo: Webcam Continuous Hand Landmarks Detection</h2> <!-- Changed heading -->
+    <p>Hold your hand in front of your webcam to get real-time hand landmarker detection.<br>Click <b>enable webcam</b> below and grant access to the webcam if prompted.</p> <!-- Updated instructions -->
+
+    <div id="liveView" class="videoView">
+      <button id="webcamButton" class="mdc-button mdc-button--raised">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">ENABLE WEBCAM</span>
+      </button>
+      <div style="position: relative;">
+        <video id="webcam" autoplay playsinline></video>
+        <canvas class="output_canvas" id="output_canvas" style="position: absolute; left: 0px; top: 0px;"></canvas>
+      </div>
+    </div>
+    <!-- Removed the blend shapes section as it's not needed for hand landmark detection -->
+  </section>
+</body>
+</html>

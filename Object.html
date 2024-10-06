@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MiniProject</title>
+  <link rel="stylesheet" type="text/css" href="\Css\styles.css">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <!-- Add JavaScript file reference -->
+  <script type="module" src="\JavaScript\Object.js"></script>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <nav class="menu-bar">
+    <div class="group">
+      <a class="item title" href="index.html">Home</a>
+    </div>
+    <div class="group">
+      <a class="item" href="Object.html">ObjectDetection</a>
+      <a class="item" href="Image.html">ImageSegment</a>
+      <a class="item" href="hand.html">HandLandmarker</a>
+      <a class="item" href="face_landmark.html">FaceLandmarker</a>
+      <a class="item" href="face_detec.html">FaceDetection</a>
+    </div>
+  </nav>
+  <h1>ตรวจจับวัตถุ</h1>
+  <h2>Demo: Webcam continuous detection</h2>
+  <p>Hold some objects up close to your webcam to get a real-time detection! When ready click "enable webcam" below and
+    accept access to the webcam.</p>
+  <section id="demos">
+    <div class="center">
+      <div id="liveView" class="videoView">
+        <button id="webcamButton" class="mdc-button mdc-button--raised center_button">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">ENABLE WEBCAM</span>
+        </button>
+        <video id="webcam" autoplay playsinline></video>
+      </div>
+    </div>
+
+  </section>
+</body>
+
+</html>
